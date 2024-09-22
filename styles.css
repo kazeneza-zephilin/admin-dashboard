@@ -5,3 +5,30 @@
     --dark-color:#052e16;
     --black-text:#27272a;
 }
+
+*P{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 1fr;
+    gap: 5px;
+}
+.header-menu {
+    grid-column: 1 / 4;
+    background-color: var(--third-color-700);
+}
+
+.second-header{
+
+}
+
+.sidebar{
+
+}
+
+.content{
+
+}
