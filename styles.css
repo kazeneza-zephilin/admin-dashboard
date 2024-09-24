@@ -16,19 +16,49 @@
     grid-template-rows: 100px 100px 1fr;
     gap: 5px;
 }
-.header-menu {
+.primary-header {
     grid-column: 1 / 4;
-    background-color: var(--third-color-700);
+    grid-row: 1 / 2;
+    display: flex;
+    background-color: grey;
+    justify-content: space-between;
+}
+/* lens & search bar icon resize */
+
+ul.left,li{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 5px;
+    background-color: greenyellow;
+}
+.search-icon > img {
+    width: 40px;
+    height: 40px;
+}
+.search-bar > img {
+    width:px;
+}
+ul.right,li {
+    display: flex;
+    gap: 5px;
+    background-color: red;
+    list-style: none;
 }
 
 .second-header{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
 
 }
 
 .sidebar{
-
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
 }
 
 .content{
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
 
 }
