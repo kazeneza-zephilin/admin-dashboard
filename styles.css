@@ -17,45 +17,122 @@
     gap: 5px;
 }
 .primary-header {
-    grid-column: 1 / 4;
+    grid-column: 2 / 5;
     grid-row: 1 / 2;
     display: flex;
-    background-color: grey;
     justify-content: space-between;
 }
 /* lens & search bar icon resize */
 
-ul.left,li{
+.primary-header ul.left, ul.left li{
     display: flex;
     list-style: none;
     justify-content: space-between;
-    gap: 5px;
-    background-color: greenyellow;
+    align-items: center;
+    gap: 10px;
 }
 .search-icon > img {
     width: 40px;
     height: 40px;
+    opacity: 0.7;
 }
-.search-bar > img {
-    width:px;
-}
-ul.right,li {
+ul.left li .search-bar {
     display: flex;
-    gap: 5px;
-    background-color: red;
+    width: 550px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #E2E8F0;
+    justify-content: center;
+    align-items: center;
+}
+.primary-header ul.right, ul.right li{
+    display: flex;
+    gap: 10px;
     list-style: none;
+    align-items: center;
+}
+.right li.bell img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: greenyellow;
+}
+ul.right li > p {
+    width: max-content;
+    height: auto;
+    font-weight: bold;
 }
 
 .second-header{
-    grid-column: 1 / 4;
+    grid-column: 2 / 5;
     grid-row: 2 / 3;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
 }
-
+.second-header .left {
+    display: flex;
+    gap: 10px;
+}
+.second-header .right button {
+    width: 100px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: var(--primary-color-200);
+    border: none;
+    font-weight: 600;
+}
+.second-header .right {
+    display: flex;
+    gap: 20px;
+}
 .sidebar{
     grid-column: 1 / 2;
     grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--primary-color-200);
 }
+.sidebar .dashboard-icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.sidebar .dashboard-icon p {
+    font-size: 24px;
+    font-weight: bold;
+}
+.sidebar .dashboard-icon img {
+width: 50px;
+height: 50px;
+}
+.sidebar ul.nav ul, ul.nav li {
+    display: flex;
+    list-style: none;
+}
+ul.customization , ul.customization li {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+.icon-item {
+    display: flex;
+    align-items: center;
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
 
 .content{
     grid-column: 2 / 4;

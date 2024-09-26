@@ -11,62 +11,26 @@
       <div class="primary-header">
         <ul class="left">
           <li class="search-icon">
-            <img src="/assets/img/magnify.svg" alt="search icon" />
+            <img src="./assets/img/magnify.svg" alt="search icon" />
           </li>
-          <li class="search-bar">
-            <svg
-              width="300px"
-              height="auto"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              x="0px"
-              y="0px"
-              viewBox="0 0 100 125"
-              style="enable-background: new 0 0 100 100"
-              xml:space="preserve"
-            >
-              <path
-                d="M82,37H18c-7.2,0-13,5.8-13,13c0,7.2,5.8,13,13,13h64c7.2,0,13-5.8,13-13C95,42.8,89.2,37,82,37z M82,61H18  c-6.1,0-11-4.9-11-11c0-6.1,4.9-11,11-11h64c6.1,0,11,4.9,11,11C93,56.1,88.1,61,82,61z"
-              />
-              <path
-                d="M21.7,52.8c0.8-1.1,1.3-2.4,1.3-3.8c0-3.6-2.9-6.5-6.5-6.5S10,45.4,10,49s2.9,6.5,6.5,6.5c1.4,0,2.8-0.5,3.8-1.3l4,4  c0.4,0.4,1,0.4,1.4,0c0.4-0.4,0.4-1,0-1.4L21.7,52.8z M16.5,53.5c-2.5,0-4.5-2-4.5-4.5s2-4.5,4.5-4.5s4.5,2,4.5,4.5  S19,53.5,16.5,53.5z"
-              />
-              <text
-                x="0"
-                y="115"
-                fill="#000000"
-                font-size="5px"
-                font-weight="bold"
-                font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
-              >
-                Created by un·delivered
-              </text>
-              <text
-                x="0"
-                y="120"
-                fill="#000000"
-                font-size="5px"
-                font-weight="bold"
-                font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
-              >
-                from the Noun Project
-              </text>
-            </svg>
+          <li>
+            <div class="search-bar"></div>
           </li>
         </ul>
         <ul class="right">
-          <li class="notification-bell">
-            <img src="/assets/img/bell-ring-outline.svg" alt="bell-icon" />
+          <li class="bell">
+            <img src="./assets/img/bell-ring-outline.svg" alt="bell-icon" />
           </li>
-          <li class="logo"><img src="#/assets/img/cat.png" alt="" /></li>
-          <li class="text-logo">Morgan Oakley</li>
+          <li><div class="profile"></div></li>
+          <li><p>Morgan Oakley</p></li>
         </ul>
       </div>
       <div class="second-header">
         <div class="left">
-          <div class="logo"></div>
-          <div class="log-text">
+          <div class="profile">
+            <img src="" alt="" />
+          </div>
+          <div class="profile-text">
             <div class="title">Hi there,</div>
             <div class="email">Morgan Oakley(@morgan)</div>
           </div>
@@ -78,50 +42,76 @@
         </div>
       </div>
       <div class="sidebar">
-        <div class="dashboard-icon"><img src="" alt="" /></div>
-        <p>dashboard</p>
+        <div class="dashboard-icon">
+          <img src="./assets/img/view-dashboard.svg" alt="dashboard" />
+          <p>Dashboard</p>
+        </div>
         <ul class="nav">
           <li class="Home">
-            <div class="home-icon"><img src="" alt="" /></div>
+            <div class="home-icon icon-item">
+              <img class="icon" src="./assets/img/home.svg" alt="home icon" />
+            </div>
             <p>Home</p>
           </li>
-          <li class="Profile">
-            <div class="Profile-icon"><img src="" alt="" /></div>
+          <li class="Profile icon-item">
+            <div class="Profile-icon">
+              <img
+                class="icon"
+                src="./assets/img/account.svg"
+                alt="profile icon"
+              />
+            </div>
             <p>Profile</p>
           </li>
-          <li class="Messages">
-            <div class="message-icon"><img src="" alt="" /></div>
+          <li class="Messages icon-item">
+            <div class="message-icon icon">
+              <img
+                src="./assets/img/message-badge-outline.svg"
+                alt="message_icon"
+              />
+            </div>
             <p>Message</p>
           </li>
-          <li class="History">
-            <div class="history-icon"><img src="" alt="" /></div>
+          <li class="icon-item">
+            <div class="history-icon icon">
+              <img src="./assets/img/history.svg" alt="history_icon" />
+            </div>
             <p>History</p>
           </li>
-          <li class="Task">
-            <div class="task-icon"><img src="" alt="" /></div>
-            <p>Task</p>
+          <li class="Task icon-item">
+            <div class="task-icon icon">
+              <img
+                src="./assets/img/file-document-check-outline.svg"
+                alt="task_icon"
+              />
+            </div>
+            <p>Tasks</p>
           </li>
-          <li class="communities">
-            <div class="task-icon"><img src="" alt="" /></div>
-            <p>Task</p>
+          <li class="communities task-item">
+            <div class="communities icon">
+              <img src="./assets/img/account-group-outline.svg" alt="" />
+            </div>
+            <p>Communities</p>
           </li>
         </ul>
         <ul class="customization">
           <li>
-            <div class="setting">
-              <div class="setting-icon"><img src="" alt="" /></div>
+            <div class="setting icon-item">
+              <div class="setting-icon icon">
+                <img  src="./assets/img/cog.svg" alt="setting" />
+              </div>
               <p>Setting</p>
             </div>
           </li>
           <li>
-            <div class="support">
-              <div class="support-icon"><img src="" alt="" /></div>
+            <div class="support icon-item">
+              <div class="support-icon icon"><img src="./assets/img/comment-question.svg" alt="support" /></div>
               <p>Support</p>
             </div>
           </li>
           <li>
-            <div class="Privacy">
-              <div class="setting-icon"><img src="" alt="" /></div>
+            <div class="Privacy icon-item">
+              <div class="setting-icon icon"><img src="./assets/img/shield-lock-outline.svg" alt="privacy" /></div>
               <p>Privacy</p>
             </div>
           </li>
