@@ -134,8 +134,45 @@ ul.customization , ul.customization li {
 }
 
 
-.content{
-    grid-column: 2 / 4;
+.content-container{
+    grid-column: 2 / 5;
     grid-row: 3 / 4;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr;
+}
+.content-container .header {
+    grid-column:1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+}
+.content-container .projects {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.projects .card-container {
+    width: 300px;
+    height:180px;
+    background-color: var(--second-color-400);
+    display: flex;
+}
+.side-color {
+    width:15px;
+    height: 100%;
+    background-color: blue;
+}
+.project-card {
+    margin: 10px;
+}
+.project-card .title {
+    font-weight: bold;
+}
+.content-container .announcements {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
