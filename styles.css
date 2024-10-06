@@ -14,7 +14,7 @@
 .main-container{
     display: grid;
     grid-template-columns: 250px 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 1fr;
+    grid-template-rows: 100px 100px 800px;
     gap: 5px;
 }
 .primary-header {
@@ -209,7 +209,7 @@ p.title {
 
 .announcements > .container {
     width: 200px;
-    height: 280px;
+    height: 260px;
     border-radius: 10px;
     background-color: white;
     padding: 25px;
@@ -225,4 +225,45 @@ p.title {
     height: 1px;
     background-color: var(--primary-color-200);
     margin: 10px 0;
+}
+.container + p {
+    margin-left: 70px;
+}
+.user-container {
+    box-sizing: border-box;
+    width: 250px;
+    height: 270px;
+    border-radius: 10px;
+    background-color:white;
+    padding: 5px 10px 10px 20px;
+    margin-top: 10px;
+}
+.user {
+    display: flex;
+}
+
+.user > .photo {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.credentials {
+    margin-top: 10px;
+}
+.credentials p {
+    margin: 0;
+}
+.credentials p.handle {
+    font-weight: bold;
+}
+.credentials p.app-name {
+    margin-top: -2;
+    color: var(--black-text);
+}
+
+.user img {
+    width: 100%;
+    height: 100%;
 }
