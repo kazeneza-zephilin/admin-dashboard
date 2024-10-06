@@ -5,6 +5,8 @@
     --red-variant:#fee2e2;
     --dark-color:#052e16;
     --black-text:#52525b;
+    --title-color:#52525b;
+    font-family: Helvetica, sans-serif;
 }
 
 *P{
@@ -72,6 +74,7 @@ ul.right li > p {
     width: max-content;
     height: auto;
     font-weight: bold;
+    color: var(--title-color);
 }
 
 .second-header{
@@ -90,6 +93,7 @@ ul.right li > p {
     height: 35px;
     border-radius: 30px;
     background-color: var(--primary-color-200);
+    color: var(--black-text);
     border: none;
     font-weight: 600;
 }
@@ -104,17 +108,19 @@ ul.right li > p {
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--red-variant);
+    color: var(--black-text);
 }
 .sidebar .dashboard-icon{
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 5px;
+    opacity:0.8;
 }
 .sidebar .dashboard-icon p {
     font-size: 24px;
     font-weight: bold;
-    color: var(--dark-color);
+    color: var(--black-text);
 }
 .sidebar .dashboard-icon img {
 width: 50px;
@@ -137,6 +143,7 @@ ul.customization , ul.customization li {
     width: 25px;
     height: 25px;
     margin-right: 20px;
+    opacity: 0.5;
 }
 
 
@@ -154,6 +161,7 @@ ul.customization , ul.customization li {
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
+    color: var(--black-text);
 }
 .content-container .projects {
     grid-column: 1 / 2;
@@ -182,13 +190,16 @@ ul.customization , ul.customization li {
 }
 p.title {
     font-weight: bold;
+    color: var(--black-text);
     margin-bottom: 0;
+    font-family: system-ui;
 }
 .content > p {
     margin-top: 5px;
     line-height: 1.5;
     word-spacing: 2px;
     color: var(--black-text);
+    font-family: sans-serif;
 }
 .card-container .card-icons {
     display: flex;
@@ -199,6 +210,7 @@ p.title {
 .project-icon {
     width: 24px;
     height: 24px;
+    opacity: 0.8;
 }
 .content-container .announcements {
     grid-column: 2 / 3;
@@ -261,6 +273,7 @@ p.title {
 .credentials p.app-name {
     margin-top: -2;
     color: var(--black-text);
+    font-size: 13px;
 }
 
 .user img {
